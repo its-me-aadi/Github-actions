@@ -32,7 +32,7 @@ const wikiSchema=new mongoose.Schema({
 const Article=mongoose.model("Article",wikiSchema);
 
 
-///////////////////////////////////////request targeting all articles////////////////////////////////////////////
+/////////////////////////////////////// request targeting all articles ////////////////////////////////////////////
 app.route("/articles")
     .get(function(req,res){
         Article.find({})
